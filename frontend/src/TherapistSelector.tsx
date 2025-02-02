@@ -7,8 +7,8 @@ export default function TherapistSelector({ onSelect }) {
   ];
 
   return (
-    <Select 
-      placeholder="Choose your therapist" 
+    <Select
+      placeholder="Choose your therapist"
       onChange={(e) => onSelect(e.target.value)}
       bg="white"
       borderRadius="xl"

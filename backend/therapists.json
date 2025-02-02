@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Emily",
+      "photo": "emily.jpg",
+      "description": "Specializes in Cognitive Behavioral Therapy (CBT).",
+      "approach": "CBT"
+    },
+    {
+      "id": 2,
+      "name": "Dr. James",
+      "photo": "james.jpg",
+      "description": "Focuses on mindfulness and stress reduction.",
+      "approach": "Mindfulness"
+    }
+  ]
