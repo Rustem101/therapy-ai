@@ -42,22 +42,20 @@ def chat():
     Respond empathetically and professionally. Keep responses under 3 sentences.
     """
 
-    return jsonify({"response": "You're good bro, don't worry!"})
 
-    # # Call OpenAI
-    # try:
-    #     response = openai.ChatCompletion.create(
-    #         model="gpt-4",
-    #         messages=[
-    #             {"role": "system", "content": system_prompt},
-    #             {"role": "user", "content": user_message}
-    #         ]
-    #     )
-    #     ai_response = response['choices'][0]['message']['content']
-    #     return jsonify({"response": ai_response})
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_message}
+            ]
+        )
+        ai_response = response['choices'][0]['message']['content']
+        return jsonify({"response": ai_response})
     
-    # except Exception as e:
-    #     return jsonify({"error": str(e)}), 500
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

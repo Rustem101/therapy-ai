@@ -17,21 +17,23 @@ export default function App() {
     "linear(to-b, gray.800, gray.900)"
   );
 
-  // Mock therapist data (replace with data fetched from your Flask backend)
+  // Mock therapist data (replace with data fetched from Flask backend)
   const therapists = [
     {
       id: 1,
       name: "Dr. Emily",
-      photo: "https://example.com/emily.jpg", // Replace with actual image URL
-      description: "Cognitive Behavioral Therapy (CBT) specialist.",
+      photo: "emily.jpg", // Replace with actual image URL
+      description:
+        "A dynamic and results-oriented psychiatrist who believes that thoughts shape emotions and behaviors, and by changing negative thought patterns, people can take control of their mental well-being. Her patients appreciate her direct but compassionate style—she is warm and supportive but also challenges them to take action and make tangible changes.",
       approach: "CBT",
     },
     {
       id: 2,
       name: "Dr. James",
-      photo: "https://example.com/james.jpg",
-      description: "Mindfulness and stress reduction expert.",
-      approach: "Mindfulness",
+      photo: "james.jpg",
+      description:
+        "A seasoned psychoanalyst who believes that the key to understanding emotional distress lies in the hidden layers of the mind. His patients often describe him as deeply insightful, patient, and someone who helps them make sense of their struggles by exploring past experiences and relationships. He takes a narrative-driven approach, guiding patients through memories, dreams, and even slips of the tongue to reveal hidden truths.",
+      approach: "Freudian",
     },
   ];
 

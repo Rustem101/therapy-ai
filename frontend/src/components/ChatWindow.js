@@ -50,7 +50,7 @@ const ChatWindow = ({ therapist, onClose }) => {
 
       {/* Chat Messages */}
       <Flex direction="column" flex={1} p={4} overflowY="auto" bg={bgGradient}>
-        {/* Example AI Message */}
+        {/* Placeholder AI Message */}
         <Flex mb={4} justify="flex-start">
           <Box bg={aiMessageBg} p={4} borderRadius="xl" maxW="70%">
             <Text>Hello! How can I help you today?</Text>
